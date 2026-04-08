@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>我的第一個網站</title>
+  <title>我的個人網站</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <div class="logo">My First Site</div>
+      <div class="logo">My Portfolio</div>
       <nav class="menu">
         <a href="#about">關於我</a>
-        <a href="#services">服務項目</a>
-        <a href="#contact">聯絡方式</a>
+        <a href="#skills">我的技能</a>
+        <a href="#works">作品展示</a>
+        <a href="#contact">聯絡我</a>
       </nav>
     </div>
   </header>
@@ -22,67 +23,92 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="eyebrow">免費練習網站</p>
-          <h1>我的第一個正式首頁</h1>
+          <p class="eyebrow">Personal Website</p>
+          <h1>你好，我正在學習網站設計與前端製作</h1>
           <p class="hero-desc">
-            這是我用 HTML 與 CSS 練習製作，並成功免費上線的第一個網站。
+            這是我的第一個個人網站作品。我正在練習 HTML、CSS 與網站上線流程，未來會持續加入更多內容與作品。
           </p>
           <div class="hero-actions">
-            <a class="btn btn-dark" href="#services">查看內容</a>
+            <a class="btn btn-dark" href="#works">查看作品</a>
             <a class="btn btn-light" href="#contact">聯絡我</a>
           </div>
         </div>
         <div class="hero-card">
           <div class="hero-card-inner">
-            <h2>網站練習重點</h2>
-            <ul>
-              <li>學會建立 HTML 與 CSS 檔案</li>
-              <li>學會上傳到 GitHub</li>
-              <li>學會用 GitHub Pages 免費上線</li>
-            </ul>
+            <img src="https://picsum.photos/500/420" alt="個人網站示意圖片">
           </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
-      <div class="container">
-        <p class="section-tag">About</p>
-        <h2>關於這個練習網站</h2>
+      <div class="container narrow">
+        <p class="section-tag">About Me</p>
+        <h2>關於我</h2>
         <p class="section-desc">
-          這個網站是我的前端入門作品，先從最基本的版型開始，之後會持續加入更多區塊與頁面。
+          我正在學習如何從零開始建立網站，包含頁面製作、樣式設計，以及使用 GitHub Pages 免費上線。這個網站就是我的練習成果之一。
         </p>
       </div>
     </section>
 
-    <section id="services" class="section section-alt">
+    <section id="skills" class="section section-alt">
       <div class="container">
-        <p class="section-tag">Services</p>
-        <h2>目前練習的內容</h2>
+        <p class="section-tag">Skills</p>
+        <h2>我的技能</h2>
         <div class="card-grid">
           <article class="card">
-            <h3>網站首頁排版</h3>
-            <p>練習標題、段落、按鈕與區塊配置，建立清楚的頁面結構。</p>
+            <h3>HTML 結構</h3>
+            <p>建立網站標題、段落、按鈕、圖片與區塊，整理清楚的頁面內容。</p>
           </article>
           <article class="card">
-            <h3>響應式版面</h3>
-            <p>讓網站在手機與電腦上都能正常閱讀，版型不會跑掉。</p>
+            <h3>CSS 排版</h3>
+            <p>調整顏色、字體大小、按鈕樣式、卡片設計與整體版面配置。</p>
           </article>
           <article class="card">
-            <h3>免費網站上線</h3>
-            <p>利用 GitHub Pages，把靜態網站發布成真正可分享的網址。</p>
+            <h3>網站上線</h3>
+            <p>使用 GitHub Pages，把靜態網站上傳並變成真正可分享的網址。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="works" class="section">
+      <div class="container">
+        <p class="section-tag">Works</p>
+        <h2>作品展示</h2>
+        <div class="work-grid">
+          <article class="work-card">
+            <img src="https://picsum.photos/600/400?random=1" alt="作品一">
+            <div class="work-body">
+              <h3>作品一｜個人網站首頁</h3>
+              <p>練習首頁排版、導覽列、按鈕設計與響應式區塊安排。</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <img src="https://picsum.photos/600/400?random=2" alt="作品二">
+            <div class="work-body">
+              <h3>作品二｜服務介紹頁</h3>
+              <p>練習資訊分區、卡片設計，以及更完整的頁面視覺層次。</p>
+            </div>
+          </article>
+          <article class="work-card">
+            <img src="https://picsum.photos/600/400?random=3" alt="作品三">
+            <div class="work-body">
+              <h3>作品三｜上線練習頁</h3>
+              <p>把完成的靜態頁面上傳到 GitHub，成功部署成公開網址。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
       <div class="container contact-box">
         <div>
           <p class="section-tag">Contact</p>
-          <h2>聯絡方式</h2>
+          <h2>聯絡我</h2>
           <p class="section-desc">
-            這裡之後可以放 Email、社群連結，或你的作品集連結。
+            這裡可以放你的 Email、社群連結，或未來想展示的聯絡方式。
           </p>
         </div>
         <a class="btn btn-dark" href="mailto:hello@example.com">寄信給我</a>
@@ -92,7 +118,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 My First Site. All rights reserved.</p>
+      <p>© 2026 My Portfolio. All rights reserved.</p>
     </div>
   </footer>
 </body>
