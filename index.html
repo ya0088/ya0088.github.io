@@ -7,10 +7,93 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="wrap">
-    <h1>我的第一個網站</h1>
-    <p>這是我練習架設的免費網站。</p>
-    <a class="btn" href="#">了解更多</a>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">My First Site</div>
+      <nav class="menu">
+        <a href="#about">關於我</a>
+        <a href="#services">服務項目</a>
+        <a href="#contact">聯絡方式</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">免費練習網站</p>
+          <h1>我的第一個正式首頁</h1>
+          <p class="hero-desc">
+            這是我用 HTML 與 CSS 練習製作，並成功免費上線的第一個網站。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#services">查看內容</a>
+            <a class="btn btn-light" href="#contact">聯絡我</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <h2>網站練習重點</h2>
+            <ul>
+              <li>學會建立 HTML 與 CSS 檔案</li>
+              <li>學會上傳到 GitHub</li>
+              <li>學會用 GitHub Pages 免費上線</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-tag">About</p>
+        <h2>關於這個練習網站</h2>
+        <p class="section-desc">
+          這個網站是我的前端入門作品，先從最基本的版型開始，之後會持續加入更多區塊與頁面。
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <p class="section-tag">Services</p>
+        <h2>目前練習的內容</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>網站首頁排版</h3>
+            <p>練習標題、段落、按鈕與區塊配置，建立清楚的頁面結構。</p>
+          </article>
+          <article class="card">
+            <h3>響應式版面</h3>
+            <p>讓網站在手機與電腦上都能正常閱讀，版型不會跑掉。</p>
+          </article>
+          <article class="card">
+            <h3>免費網站上線</h3>
+            <p>利用 GitHub Pages，把靜態網站發布成真正可分享的網址。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-box">
+        <div>
+          <p class="section-tag">Contact</p>
+          <h2>聯絡方式</h2>
+          <p class="section-desc">
+            這裡之後可以放 Email、社群連結，或你的作品集連結。
+          </p>
+        </div>
+        <a class="btn btn-dark" href="mailto:hello@example.com">寄信給我</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 My First Site. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
